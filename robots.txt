@@ -1,3 +1,0 @@
-User-agent: *
-Allow: /
-Sitemap: https://bibhu223.github.io/sitemap.xml
