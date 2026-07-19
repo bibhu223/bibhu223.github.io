@@ -192,72 +192,70 @@ footer{border-top:1px solid var(--line);padding:1.4rem 0}
    Animated Research Keywords
 ========================================== */
 
+/* Continuous research keyword slider */
+
 .research-slider{
     width:100%;
     overflow:hidden;
-    margin:20px 0 35px;
+    margin:20px 0 30px;
     position:relative;
 }
 
 .slider-track{
     display:flex;
+    width:max-content;
+    animation:continuousResearchSlide 35s linear infinite;
+    will-change:transform;
+}
+
+.slider-group{
+    display:flex;
     align-items:center;
-    gap:18px;
-    white-space:nowrap;
-    animation:marquee 35s linear infinite;
+    gap:16px;
+    padding-right:16px;
+    flex-shrink:0;
 }
 
 .slider-track:hover{
     animation-play-state:paused;
 }
 
-@keyframes marquee{
-
-    0%{
-        transform:translateX(100%);
+@keyframes continuousResearchSlide{
+    from{
+        transform:translateX(0);
     }
 
-    100%{
-        transform:translateX(-100%);
+    to{
+        transform:translateX(-50%);
     }
-
 }
 
 .tag{
-
     display:inline-flex;
     align-items:center;
     justify-content:center;
-
-    padding:12px 24px;
-
+    flex-shrink:0;
+    padding:10px 20px;
     border-radius:40px;
-
-    color:white;
-
-    font-size:15px;
-
+    color:#ffffff;
+    font-size:14px;
     font-weight:700;
-
-    letter-spacing:.5px;
-
-    box-shadow:0 8px 20px rgba(0,0,0,.20);
-
-    transition:.3s;
+    white-space:nowrap;
+    box-shadow:0 8px 18px rgba(0,0,0,.16);
 }
 
-.tag:hover{
+.blue{background:#1976d2;}
+.green{background:#2e7d32;}
+.orange{background:#f57c00;}
+.purple{background:#8e24aa;}
+.cyan{background:#0097a7;}
+.red{background:#d32f2f;}
 
-    transform:translateY(-5px) scale(1.08);
-
+@media (prefers-reduced-motion:reduce){
+    .slider-track{
+        animation:none;
+    }
 }
-
-.blue{background:#1976D2;}
-.green{background:#2E7D32;}
-.orange{background:#F57C00;}
-.purple{background:#8E24AA;}
-.cyan{background:#00ACC1;}
-.red{background:#D32F2F;}
 /* Keep profile photo visible above the animation */
 .hero-photo-wrap{
     position:relative;
