@@ -188,3 +188,72 @@ footer{border-top:1px solid var(--line);padding:1.4rem 0}
         transform:translateX(-50%);
     }
 }
+/* ===========================
+   Research Keyword Slider
+=========================== */
+
+.research-slider{
+    width:100%;
+    overflow:hidden;
+    margin:20px 0 30px;
+}
+
+.slider-track{
+    display:flex;
+    gap:15px;
+    width:max-content;
+    animation:slideResearch 22s linear infinite;
+}
+
+.slider-track:hover{
+    animation-play-state:paused;
+}
+
+.tag{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    padding:10px 20px;
+    border-radius:40px;
+    font-size:14px;
+    font-weight:700;
+    color:white;
+    white-space:nowrap;
+    box-shadow:0 8px 18px rgba(0,0,0,.15);
+}
+
+.blue{
+    background:#1976D2;
+}
+
+.green{
+    background:#2E7D32;
+}
+
+.orange{
+    background:#F57C00;
+}
+
+.purple{
+    background:#7B1FA2;
+}
+
+.cyan{
+    background:#0097A7;
+}
+
+.red{
+    background:#D32F2F;
+}
+
+@keyframes slideResearch{
+
+    from{
+        transform:translateX(0);
+    }
+
+    to{
+        transform:translateX(-50%);
+    }
+
+}
