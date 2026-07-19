@@ -180,3 +180,11 @@ footer{border-top:1px solid var(--line);padding:1.4rem 0}
 .animated-hero::after{content:"";position:absolute;left:0;right:0;bottom:0;height:150px;z-index:-1;background:linear-gradient(to top,var(--bg),transparent)}
 @media(max-width:900px){.animated-hero{min-height:auto}.hero-overlay{background:color-mix(in srgb,var(--bg) 70%,transparent)}.animated-hero .hero-grid{min-height:auto}}
 @media(prefers-reduced-motion:reduce){#robotics-canvas{display:none}}
+@keyframes slideResearch{
+    from{
+        transform:translateX(0);
+    }
+    to{
+        transform:translateX(-50%);
+    }
+}
