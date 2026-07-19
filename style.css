@@ -258,3 +258,17 @@ footer{border-top:1px solid var(--line);padding:1.4rem 0}
 .purple{background:#8E24AA;}
 .cyan{background:#00ACC1;}
 .red{background:#D32F2F;}
+/* Keep profile photo visible above the animation */
+.hero-photo-wrap{
+    position:relative;
+    z-index:5;
+}
+
+.hero-photo{
+    position:relative;
+    z-index:6;
+}
+
+.photo-card{
+    z-index:7;
+}
