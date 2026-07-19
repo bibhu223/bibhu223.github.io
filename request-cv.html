@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, follow">
+<title>Request CV | Dr. Bibhutibhusan Nayak</title>
+<link rel="stylesheet" href="style.css">
+<script defer src="script.js"></script>
+</head>
+<body>
+<header class="site-header">
+<nav class="nav container">
+<a class="brand" href="index.html">Bibhutibhusan Nayak</a>
+<a class="nav-cv" href="index.html">Back to website</a>
+</nav>
+</header>
+
+<main class="cv-request-main">
+<section class="cv-request-shell">
+<div class="cv-request-intro">
+<p class="section-kicker">Curriculum vitae</p>
+<h1>Request my CV</h1>
+<p>Please provide your professional details. I will review the request and send the latest CV to the email address you provide.</p>
+<div class="privacy-note">
+<strong>Privacy notice</strong>
+<p>Your information will only be used to respond to this request.</p>
+</div>
+</div>
+
+<form class="cv-request-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+<input type="hidden" name="_subject" value="New CV request from academic website">
+<input type="hidden" name="_next" value="https://bibhu223.github.io/request-sent.html">
+
+<label class="honeypot" aria-hidden="true">
+Leave this field empty
+<input type="text" name="_gotcha" tabindex="-1" autocomplete="off">
+</label>
+
+<div class="form-grid">
+<label>Full name *
+<input type="text" name="full_name" minlength="3" maxlength="100" autocomplete="name" required>
+</label>
+
+<label>Professional email *
+<input type="email" name="email" maxlength="150" autocomplete="email" required>
+</label>
+
+<label>Institution or company *
+<input type="text" name="institution" minlength="2" maxlength="150" autocomplete="organization" required>
+</label>
+
+<label>Country *
+<input type="text" name="country" minlength="2" maxlength="80" autocomplete="country-name" required>
+</label>
+</div>
+
+<label>Purpose of request *
+<select name="purpose" required>
+<option value="">Select one</option>
+<option>Research collaboration</option>
+<option>Academic or faculty recruitment</option>
+<option>Postdoctoral opportunity</option>
+<option>Conference or invited talk</option>
+<option>Student or academic inquiry</option>
+<option>Other professional purpose</option>
+</select>
+</label>
+
+<label>Short message *
+<textarea name="message" rows="5" minlength="20" maxlength="1000" placeholder="Please briefly explain why you are requesting the CV." required></textarea>
+</label>
+
+<label class="confirmation-box">
+<input type="checkbox" name="human_confirmation" value="confirmed" required>
+<span>I confirm that I am a real person making a genuine professional request.</span>
+</label>
+
+<label class="confirmation-box">
+<input type="checkbox" name="privacy_consent" value="accepted" required>
+<span>I agree that my submitted details may be used to respond to this request.</span>
+</label>
+
+<button class="btn primary submit-btn" type="submit">Submit CV request</button>
+<p class="form-help">The CV is not downloaded automatically. It will be sent manually after review.</p>
+</form>
+</section>
+</main>
+
+<footer>
+<div class="container footer-row">
+<p>© <span id="current-year"></span> Bibhutibhusan Nayak</p>
+<p>Hosted on GitHub Pages</p>
+</div>
+</footer>
+</body>
+</html>

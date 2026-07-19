@@ -1,0 +1,1 @@
+Replace index.html, style.css, and script.js in the repository root. Keep the assets folder and CV request pages. Commit, wait 1-2 minutes, then press Ctrl+Shift+R on https://bibhu223.github.io
